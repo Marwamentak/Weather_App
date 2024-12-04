@@ -1,0 +1,110 @@
+* {
+  margin: 0;
+  padding: 0;
+  font-family: 'Poppins', sans-serif;
+  box-sizing: border-box;
+}
+ body {
+  background-color: #222;
+ }
+
+ .card {
+  width: 90%;
+  max-width: 470px;
+  background: linear-gradient(135deg, #00feba, #5b548a);
+  color: #fff;
+  margin: 100px auto 0;
+  border-radius: 20px;
+  padding: 40px 35px;
+  text-align: center;
+ }
+
+ .search {
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+ }
+
+ .search input {
+  border: 0;               /* Supprime la bordure par défaut */
+  outline: 0;              /* Supprime le contour par défaut (focus) */
+  background: #ebfffc;     /* Définit un fond vert clair */
+  color: #555;             /* Définit la couleur du texte en gris foncé */
+  padding: 10px 25px;      /* Ajoute un espacement intérieur (10px en haut/bas, 25px à gauche/droite) */
+  height: 60px;            /* Fixe la hauteur à 60 pixels */
+  border-radius: 30px;     /* Arrondit les coins, rendant l'input en forme de pilule */
+  flex: 1;                 /* L'input prend tout l'espace disponible dans un conteneur flex */
+  margin-right: 16px;      /* Ajoute une marge de 16 pixels à droite */
+  font-size: 18px;         /* Définit la taille de la police à 18 pixels */
+}
+
+.search button { 
+  border: 0;               /* Supprime la bordure par défaut */
+  outline: 0;              /* Supprime le contour par défaut lors du focus */
+  background: #ebfffc;     /* Définit un fond vert clair */
+  border-radius: 50%;      /* Rend l'élément totalement circulaire */
+  width: 60px;             /* Fixe la largeur à 60 pixels */
+  height: 60px;            /* Fixe la hauteur à 60 pixels */
+  cursor: pointer;         /* Change le curseur en une main (indiquant un élément cliquable) */
+
+}
+
+.search button img {
+  width: 16px;
+}
+
+
+.weather-icon {
+  width:170px;
+  margin-top: 30px;
+}
+
+.weather h1 {
+  font-size: 80px;
+  font-weight: 500;
+}
+
+.weather h2 {
+  font-size: 80px;
+  font-weight: 500;
+  margin-top: -10px;
+}
+
+.details {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 0 20px;
+  margin-top: 50px;
+
+}
+
+.col{
+  display: flex;
+  align-items: center;
+  text-align: left;
+}
+
+.col img {
+  width: 40px;
+  margin-right: 10px;
+}
+
+.humidity, .wind {
+  font-size: 28px;
+  margin-top: -6px;
+}
+
+.weather {
+  display: none;
+}
+
+.error {
+  text-align: left;
+  margin-left: 10px;
+  font-size: 14px;
+  margin-top: 10px;
+  display: none;
+
+}
